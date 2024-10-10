@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+    font-family: "Oxanium", sans-serif;
+    color:var(--white);
+}
+body{
+    background-color:black;
+}
+
+:root{
+    --primary-700:#CAA82E; 
+    --primary-600:#A08B3F;
+    --white: #f1f3ff;
+}
+
+.navbar{
+    display:flex;
+    flex: 1;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar > div{
+    padding:1rem;
+}
+.center-logo{
+    font-weight:600;
+    font-size:28px;
+}
+.background-image{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    width:100vw;
+    height:100svh;
+    margin-inline:auto;
+    background-image:linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("https://www.reallusion.com/ContentStore/Character-Creator/Pack/Paladin/images/MainBanner_Paladin_mobile.jpg");
+    background-size:cover;
+    background-position:77% 100%;
+}
+.container{
+    display:flex;
+    flex-direction:column;    
+    justify-content:flex-end;
+    margin:auto;
+    height:85svh; /*esto es el porcentaje del alto de la pantalla*/
+    max-width:800px; /*esto es el porcentaje del ancho de la pantalla*/
+}
+.parrafo{
+    width:80%;
+    text-align:center;
+    font-size:16px;
+    margin:0 auto;
+}
+/* .parrafo h1{
+    font-size:60px;
+} */
+.parrafo h3{
+    margin-top:1rem;
+    margin-bottom:0rem;
+    font-weight: 300;
+}
+.button-inscribirse{
+    text-align:center;
+    min-height:85px;
+    max-width:400px;
+    min-width:330px;
+    margin: 4svh auto 0;   
+    position:relative; /*poniendo esto y las cosas del .inscribirse a{} hacemos que se centre sin flex*/
+    outline: .2rem solid #A08B3F; 
+    outline-offset: 3px;
+    background-color:#A08B3F;
+}
+.button-inscribirse:active, .button-inscribirse:hover{
+    background-color:#CAA82E;
+    outline: .2rem solid #CAA82E; 
+    animation-duration: 4s;
+}
+.button-inscribirse a{
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    color:white;
+    mix-blend-mode:screen;
+    font-size:45px;
+    font-weight:600;
+}
+.aftermain{
+    margin-top:4rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(700px,1fr));
+    gap:1rem;
+    
+}
+.celda{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    margin:auto;
+    height:auto;
+    background-color:rgb(51, 51, 51);
+    max-width:92%;
+    padding:1rem;
+}
+.celda h1, .celda p{
+    margin:1rem;
+}
+.celda > img{
+    max-width:400px;
+}

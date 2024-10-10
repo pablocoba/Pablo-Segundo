@@ -1,0 +1,1 @@
+window.alert("I\'m = I am\nI don\'t = I do not")

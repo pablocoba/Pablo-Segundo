@@ -1,0 +1,304 @@
+body{
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color:#f1f3ff;   
+}
+h1{
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size:40px;
+}
+
+@media (min-width: 577px){
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:black;
+}
+header{
+    width:100%;
+    position:sticky; /*es posible que sea mejor ponerle esta propiedad al .navbar pero en vez de sticky, fixed.*/
+    top:0;
+}
+footer{
+    color:white;
+}
+.navbar{
+    margin:auto;
+    z-index: 3;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    max-width:95vw;
+    margin-top:1rem;
+}
+.navbar > div {
+    height:50px;
+}
+.center{
+    text-align:center;
+    max-height:50px;
+    max-width:300px;
+}
+.center img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+.bars, .user{
+    width:50px;
+}
+.background-image{
+    position:absolute;
+    padding-top:300px;
+    text-align:center;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(rgb(255, 255, 255,0),black),url("https://www.reallusion.com/ContentStore/Character-Creator/Pack/Paladin/images/MainBanner_Paladin_mobile.jpg");
+    background-size:contain;
+    background-position: 50% 100%;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:flex-end;
+    height:88vh; /*esto es el porcentaje del alto de la pantalla*/
+    margin:auto;
+    width:60vw; /*esto es el porcentaje del ancho de la pantalla*/
+}
+.parrafo{
+    height:300px;
+    width:100%;
+    margin:auto auto 1rem auto; 
+    text-align:center;
+}
+.parrafo h1{
+    font-size:60px;
+}
+.parrafo h3{
+    margin-top:1rem;
+    margin-bottom:0rem;
+    font-weight: 300;
+}
+.inscribirse{
+    text-align:center;
+    height:120px;
+    width:500px;
+    margin: 0 auto;   
+    display:flex;
+    position:relative; /*poniendo esto y las cosas del .inscribirse a{} hacemos que se centre sin flex*/
+    outline: .2rem solid #A08B3F; 
+    outline-offset: 3px;
+    background-color:#A08B3F;
+}
+.inscribirse:active, .inscribirse:hover{
+    background-color:#CAA82E;
+    outline: .2rem solid #CAA82E; 
+}
+.inscribirse a{
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    color:white;
+    mix-blend-mode:screen;
+    font-size:4rem;
+    font-weight:600;
+}
+.aftermain{
+    display:grid;
+    justify-content: center;
+    grid-template-columns:auto auto;
+    height:90vh;
+    width:60vw;
+    margin: 4rem auto .5rem auto;
+    gap: 1rem;
+}
+.aftermain > article{
+    width:calc(30vw - 0.5rem);
+}
+.foot{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    height:10vh; /*esto es el porcentaje del alto de la pantalla*/
+    margin:auto;
+    width:60vw; /*esto es el porcentaje del ancho de la pantalla*/
+}
+.foot > a{
+    margin:0 0 .5rem 0;
+}
+.redes{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    flex-direction:row;
+    margin: 1rem 0 2rem 0;
+}   
+.redes > div{
+    width: 40px;
+    height:40px;
+    background-color:blue;
+}
+}
+/*---------------MÓVILES---------------*/
+
+@media (max-width: 576px){
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-color:black;
+    }
+    header{
+        width:100%;
+        position:sticky; /*es posible que sea mejor ponerle esta propiedad al .navbar pero en vez de sticky, fixed.*/
+        top:0;
+    }
+    footer{
+        color:white;
+    }
+    .navbar{
+        margin:auto;
+        z-index: 3;
+        display:flex;
+        justify-content:space-between;
+        text-align:center;
+        max-width:88vw;
+        margin-top:1rem;
+    }
+    .navbar > div {
+        max-height:50px; 
+    }
+    .center{
+        text-align:center;
+        max-height:50px;
+        max-width:300px;
+    }
+    .center img{
+        height:100%;
+        width:100%;
+        object-fit: contain;
+    }
+    .bars, .user{
+        width:50px;
+    }
+    .background-image{
+        position:absolute;
+        text-align:center;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:100vh;
+        background-image:linear-gradient(rgb(255, 255, 255,0),black),url("https://www.reallusion.com/ContentStore/Character-Creator/Pack/Paladin/images/MainBanner_Paladin_mobile.jpg");
+        background-size:cover;
+        background-position:77% 100%;
+    }
+    .background-image img{
+
+        height:100vh;
+        width:100vw;
+        object-fit: cover;
+        object-position: 80% 100%;
+
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:flex-end;
+        height:85vh; /*esto es el porcentaje del alto de la pantalla*/
+        margin:auto;
+        width:88vw; /*esto es el porcentaje del ancho de la pantalla*/
+    }
+    .parrafo{
+        height:300px;
+        width:100%;
+        margin:auto auto 1rem auto; 
+        text-align:center;
+        font-size:16px;
+    }
+    .parrafo h3{
+        margin-top:1rem;
+        margin-bottom:0rem;
+        font-weight: 300;
+    }
+    .inscribirse{
+        text-align:center;
+        height:85px;
+        width:90%;
+        margin: 0 auto;   
+        display:flex;
+        position:relative; /*poniendo esto y las cosas del .inscribirse a{} hacemos que se centre sin flex*/
+        outline: .2rem solid #A08B3F; 
+        outline-offset: 3px;
+        background-color:#A08B3F;
+    }
+    .inscribirse:active, .inscribirse:hover{
+        background-color:#CAA82E;
+        outline: .2rem solid #CAA82E; 
+    }
+    .inscribirse a{
+        transform: translate(-50%, -50%); /* Position text in the middle */
+        text-align: center; /* Center text */
+        position: absolute; /* Position text */
+        top: 50%; /* Position text in the middle */
+        left: 50%; /* Position text in the middle */
+        color:white;
+        mix-blend-mode:screen;
+        font-size:45px;
+        font-weight:600;
+    }
+    .aftermain{
+        display:grid;
+        justify-content: center;
+        height:90vh;
+        width:88vw;
+        margin: 4rem auto .5rem auto;
+        gap: 1rem;
+    }
+    .aftermain > article{
+        background-color:blue;
+        width:88vw;
+        height:100%;
+    }
+    .foot{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+        height:10vh; /*esto es el porcentaje del alto de la pantalla*/
+        margin:auto;
+        width:88vw; /*esto es el porcentaje del ancho de la pantalla*/
+    }
+    .redes{
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content:space-evenly;
+        flex-direction:row;
+        margin: 1rem 0 2rem 0;
+    }   
+    .redes > div{
+        width: 40px;
+        height:40px;
+        background-color:blue;
+    }
+}   

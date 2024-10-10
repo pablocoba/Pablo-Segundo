@@ -1,0 +1,13 @@
+.columna{
+    background-color:lightgrey;
+    border:solid black 1px;
+    border-collapse: collapse;
+}
+.titulo h3{
+    color:grey;
+}
+.titulo{
+    display:flex;
+    align-items:flex-end;
+    flex-wrap:wrap;
+}
