@@ -46,15 +46,103 @@
     </p>
     <hr>
     <p>Podemos usar "address" para indicar <span class="fs-3 text">información de contacto</span> sobre un objeto o el documento completo:</p>
-    <address class="address"><b>Homer J. Simpson</b><br>
-        742 Evergreen Terrace<br>
-        Springfield<br>
-       T: (123) 456-7890<br>
-       M: (123) 456-7890</address>
-    <p>Para delimitar <span class="fs-3 text">texto citado</span>, podemos utilizar "blockquote" alrededor de cualquier contenido HTML. Usualmente es un párrafo delimitado con la etiqueta "p":/<p>
-    <p class="blockquote">En algún lugar de la mancha, de cuyo nombre no quiero acordarme...</p>
-    <p>También podemos hacer referencia a la fuente o autor de una cita con un "footer" dentro de la misma:</p>
-    <p class="blockquote">En algún lugar de la mancha, de cuyo nombre no quiero acordarme...
+    <p>
+        Para delimitar <span class="h1">texto citado</span>, podemos utilizar blockquote alrededor de cualquier
+        contenido HTML.
+        Usualmente es un párrafo delimitado con la etiqueta p:
+    </p>
 
-        <footer class="text-secondary">— Miguel de Cervantes en El Quijote.</footer></p>
+    <blockquote class="blockquote">
+        <p>En algún lugar de la mancha, de cuyo nombre no quiero acordarme...</p>
+    </blockquote>
+
+    <p>También podemos hacer referencia a la fuente o autor de una cita con un footer dentro de la misma:</p>
+
+    <blockquote class="blockquote">
+        <p>En algún lugar de la mancha, de cuyo nombre no quiero acordarme...</p>
+        <p class="blockquote-footer">
+            Miguel de Cervantes en <cite>El Quijote</cite>.
+        </p>
+    </blockquote>
+
+    <p>Y por último, utilizar la clase blockquote-reverse para alinear la cita a la derecha:</p>
+
+    <blockquote class="blockquote-reverse" >
+        <p>En algún lugar de la mancha, de cuyo nombre no quiero acordarme...</p>
+        <p class="blockquote-footer">
+            Miguel de Cervantes en <cite>El Quijote</cite>.
+        </p>
+    </blockquote>
+
+
+    <p>Para <span class="h1">listas</span>, podemos utilizar las tradicionales "ol" (lista sin orden) y "ul" (lista
+        ordenada):</p>
+    <ul>
+        <li>Lisa</li>
+        <li> Bart</li>
+        <li>Maggie</li>
+    </ul>
+    <ol>
+        <li>Springfield</li>
+        <li>Shelbyville</li>
+    </ol>
+
+    <p>En caso de necesitar una lista sin viñetas o numeración, podemos usar la clase CSS "list-unstyled":</p>
+
+    <ol class="list-unstyled">
+        <li>Lisa</li>
+        <li>Bart</li>
+        <li>Maggie</li>
+    </ol>
+
+    <p>O incluso colocar los elementos de la lista en línea con la clase "list-inline":</p>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">Lisa</li>
+        <li class="list-inline-item">Bart</li>
+        <li class="list-inline-item">Maggie</li>
+    </ul>
+
+    <p>Podemos utilizar las <span class="h1">listas de descripción</span> "dl", con "dt" (término) y "dd"
+        (significado/definición):</p>
+
+    <dl>
+        <dt>Euismod</dt>
+
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+            Donec id elit non mi porta gravida at eget metus.
+        </dd>
+        <dt>Malesuada porta</dt>
+
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+
+    <p>Y también colocarlas en modo horizontal, con la clase "dl-horizontal":</p>
+
+    <dl class="dl-horizontal">
+        <dt>Euismod</dt>
+
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+            Donec id elit non mi porta gravida at eget metus.
+        </dd>
+        <dt>Malesuada porta</dt>
+
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+
+    <p>Para mostrar <span class="h1">fragmentos de código</span>, podemos utilizar:</p>
+    <p>•La etiqueta "code" para delimitar código "en línea": <code>&lt;section&gt;</code> (podemos continuar con texto).</p>
+
+    <p>•La etiqueta "pre" (y opcionalmente, seguida de "code") para bloques completos de texto:</p> 
+    <pre><code>aptitude update</code></pre>
+    <pre><code>aptitude update</code></pre>
+    
+    
+    <p>•Si queremos representar algo que el usuario debe introducir en el teclado (como una combinación de teclas, por ejemplo), utilizamos "kbd": <kbd>Ctrl</kbd>  + <kbd>Alt</kbd>  + <kbd>Supr</kbd> </p>
+
+    <p>•Manteniendo el principio semántico de HTML5, si queremos expresar variables por ejemplo, como parte de una fórmula, utilizamos "var": <var>c2 = a2 + b2</var> </p>
+
+    <p>•Y para delimitar ejemplos de salida de comandos o programas, utilizamos "samp": <samp>Estado actual: 2 actualizaciones [+2].</samp> </p>
+    
+    <p>En caso de querer mostrar código que pueda incluir caracteres especiales para HTML, como etiquetas, signos de "mayor que" o "menor que", se recomienda utilizar la sintaxis de códigos o nombres de entidades.</p> 
 </body>

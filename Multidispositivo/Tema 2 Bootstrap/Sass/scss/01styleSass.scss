@@ -1,0 +1,57 @@
+// Importar Bootstrap SCSS
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Personalizar variables de Bootstrap antes de importar todo
+$primary: #ff5733;   // Cambiar el color primario
+$danger: #ff0000;    // Cambiar el color de peligro
+
+$font-family-sans-serif: 'Helvetica Neue', sans-serif;
+$font-size-base: 1rem;
+
+// Importar los componentes y utilidades de Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Estilos para un botón personalizado
+.custom-button {
+  padding: 10px 20px; // Espaciado interno
+  background-color: $primary; // Color de fondo
+  color: #fff; // Color del texto
+  font-family: $font-family-sans-serif; // Usar la fuente personalizada
+  border: none; // Sin borde
+  border-radius: 0.5rem; // Bordes redondeados
+
+  // Estilo en hover
+  &:hover {
+    background-color: darken($primary, 10%); // Oscurecer el color al pasar el mouse
+  }
+}
+
+// Estilos para una tarjeta personalizada
+.custom-card {
+  padding: 20px; // Espaciado interno
+  background-color: #fff; // Fondo blanco
+  color: $primary; // Color del texto
+  border: 1px solid $primary; // Borde del color primario
+  border-radius: 0.5rem; // Bordes redondeados
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra sutil
+
+  // Estilo en hover
+  &:hover {
+    background-color: lighten($primary, 40%); // Aclarar el fondo en hover
+  }
+}
+
+// Botón de peligro
+.custom-danger-button {
+  padding: 10px 20px; // Espaciado interno
+  background-color: $danger; // Color de fondo
+  color: #fff; // Color del texto
+  border: none; // Sin borde
+  border-radius: 0.5rem; // Bordes redondeados
+
+  // Estilo en hover
+  &:hover {
+    background-color: darken($danger, 10%); // Oscurecer el color al pasar el mouse
+  }
+}
+

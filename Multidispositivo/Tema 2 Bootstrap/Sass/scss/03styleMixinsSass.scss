@@ -1,0 +1,59 @@
+// Importar Bootstrap completo (esto incluye funciones, variables y mixins)
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Personalización de colores y variables con Sass
+$primary-color: #ff5733;  // Naranja como color primario
+$secondary-color: #33c1ff;  // Azul como color secundario
+$hover-color: #ff3333;  // Rojo para hover
+$border-radius-value: 10px;  // Borde redondeado global
+
+// Usar mixins de Bootstrap para botones personalizados
+.custom-button {
+  padding: 10px 20px;
+  background-color: $primary-color;  // Aplicar el color primario personalizado
+  color: color-contrast($primary-color);  // Contraste automático para el texto
+
+  @include border-radius($border-radius-value);  // Borde redondeado
+
+  // Cambios en el hover usando el selector de pseudo-clase
+  &:hover {
+    background-color: $hover-color;  // Cambiar a rojo en hover
+    color: color-contrast($hover-color);  // Ajustar contraste en hover
+  }
+}
+
+// Usar mixins para una tarjeta personalizada
+.custom-card {
+  padding: 20px;
+  background-color: $secondary-color;  // Color secundario para la tarjeta
+  color: color-contrast($secondary-color);  // Contraste automático del texto
+  @include border-radius($border-radius-value);  // Bordes redondeados
+  
+  // Hacer la tarjeta responsive usando breakpoints de Bootstrap
+  @include media-breakpoint-up(md) {
+    padding: 30px;  // Aumentar padding en pantallas medianas
+    background-color: lighten($secondary-color, 10%);  // Aclarar el color en pantallas medianas o mayores
+  }
+
+  // Cambiar el color en hover
+  &:hover {
+    background-color: darken($secondary-color, 10%);  // Oscurecer el color en hover
+    color: color-contrast(darken($secondary-color, 10%));  // Ajustar el contraste del texto en hover
+  }
+}
+
+// Tarjeta con borde y fondo alternativo (variación)
+.custom-card-alt {
+  padding: 20px;
+  background-color: #fff;  // Fondo blanco
+  color: $secondary-color;  // Color secundario para el texto
+  @include border-radius($border-radius-value);  // Bordes redondeados
+  
+  // Aplicar borde usando propiedades CSS estándar
+  border: 2px solid $primary-color;  // Borde de 2px con el color primario
+
+  &:hover {
+    background-color: $primary-color;  // Cambiar el fondo al color primario en hover
+    color: color-contrast($primary-color);  // Ajustar contraste en hover
+  }
+}

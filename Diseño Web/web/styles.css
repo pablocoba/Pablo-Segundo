@@ -1,0 +1,26 @@
+.seat{
+    width:20px;
+    height:20px;
+    background-color:black;
+    border-radius:5px 5px 0 0;
+}
+table img{
+    max-height:300px;
+}
+.carruimg{
+    max-width:300px;
+}
+#carouselExampleControls{
+    max-width:300px;
+}
+.c-item{
+    max-height:480px;
+}
+.c-img{
+    height:100%;
+    object-fit:cover;
+    object-position: 70% 70%;
+}
+#hero-carousel{
+    max-width:70%;
+}

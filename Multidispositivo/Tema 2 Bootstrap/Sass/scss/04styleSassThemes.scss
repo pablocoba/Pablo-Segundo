@@ -1,0 +1,51 @@
+// Variables para tema claro
+$theme-primary: #ffffff; // Color de fondo primario
+$theme-secondary: #f8f9fa; // Color secundario
+$theme-dark: #343a40; // Color de texto oscuro
+
+// Variables para tema oscuro
+$theme-dark-primary: #343a40; // Color de fondo primario oscuro
+$theme-dark-secondary: #212529; // Color secundario oscuro
+$theme-dark-background: #000000; // Fondo oscuro
+
+// Estilos para tema claro
+body.theme-light {
+  background-color: $theme-primary; // Fondo blanco
+  color: $theme-dark; // Texto oscuro
+}
+
+// Estilos para tema oscuro
+body.theme-dark {
+  background-color: $theme-dark-background; // Fondo negro
+  color: $theme-primary; // Texto blanco
+}
+
+// Estilos para botones
+.custom-button {
+  padding: 10px 20px; // Espaciado interno
+  background-color: $theme-dark; // Color del botón
+  color: $theme-primary; // Color del texto
+  border: none; // Sin borde
+  border-radius: 0.5rem; // Bordes redondeados
+  transition: background-color 0.3s; // Transición suave
+
+  // Efecto hover
+  &:hover {
+    background-color: lighten($theme-dark, 10%); // Aclarar el fondo en hover
+  }
+}
+
+// Estilos para tarjetas
+.custom-card {
+  padding: 20px; // Espaciado interno
+  background-color: $theme-secondary; // Color de fondo secundario
+  color: $theme-dark; // Color del texto
+  border: 1px solid $theme-dark; // Borde oscuro
+  border-radius: 0.5rem; // Bordes redondeados
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra sutil
+
+  // Efecto hover
+  &:hover {
+    background-color: lighten($theme-secondary, 10%); // Aclarar el fondo en hover
+  }
+}

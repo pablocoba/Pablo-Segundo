@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Temas Claro y Oscuro</title>
+    <link rel="stylesheet" href="css/style01.css"> <!-- El archivo SCSS compilado a CSS -->
+</head>
+
+<body class="theme-light"> <!-- Cambia a "theme-dark" para el tema oscuro -->
+
+    <div class="container mt-5">
+        <h1 class="text-center">Ejemplo de Temas Claro y Oscuro</h1>
+    
+        <div class="text-center mb-4">
+            <button class="custom-button">Botón Personalizado</button>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-4">
+                <div class="custom-card">
+                    <h5>Título de la Tarjeta</h5>
+                    <p>Este es un ejemplo de tarjeta personalizada utilizando temas claro y oscuro.</p>
+                    <a href="#" class="custom-button">Acción</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="custom-card">
+                    <h5>Título de la Tarjeta</h5>
+                    <p>Este es otro ejemplo de tarjeta personalizada.</p>
+                    <a href="#" class="custom-button">Acción</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="custom-card">
+                    <h5>Título de la Tarjeta</h5>
+                    <p>Y otro más para demostrar cómo se ven las tarjetas.</p>
+                    <a href="#" class="custom-button">Acción</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="text-center mt-4">
+            <button id="toggle-theme" class="custom-button">Cambiar a Tema Oscuro</button>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para alternar entre temas
+        $('#toggle-theme').click(function() {
+            $('body').toggleClass('theme-dark theme-light');
+            $(this).text($(this).text() === 'Cambiar a Tema Oscuro' ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro');
+        });
+    </script>
+    </body>
+    </html>
