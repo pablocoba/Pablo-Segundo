@@ -47,6 +47,9 @@ table img{
     .margen-navbar{
         display:none;
     }
+    body{
+        overflow-x:hidden;
+    }
 }
 
 body::-webkit-scrollbar{

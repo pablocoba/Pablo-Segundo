@@ -8,10 +8,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylescine.css">
-    <title>Index</title>
+    <title>CINEMANIAC · Nuestros cines🎥🍿</title>
 </head>
 
 <body class="bg-dark">
+    <!-- header navbar -->
     <header style="align-items:start">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top top-0 p-0">
             <div class="container">
@@ -38,7 +39,7 @@
                                 <li><a class="dropdown-item text-secondary" href="proximos.html">Próximos lanzamientos</a></li>
                             </ul>
                             <li class="nav-item p-3">
-                                <a class="nav-link p-2" href="#">Cines</a>
+                                <a class="nav-link p-2" href="cines.html">Cines</a>
                             </li>
                             <li class="nav-item dropdown p-3">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -61,33 +62,86 @@
         </nav>
     </header>
     <div class="margen-navbar"></div>
+    <!-- main -->
     <main>
         <section class="container text-secondary">
             <div class="row">
                 <article class="d-flex flex-column p-3 col-lg-4 col-sm-6">
-                    <h3>CINEMANIAC ÓPERA</h3>
+                    <h3 class="fw-bold fs-4">CINEMANIAC ÓPERA</h3>
                     <p>ISENSE · VOSE · ASIENTOS CHULIS</p>
-                    <img class="foto-cine" src="https://unbuendiaenmadrid.com/wp-content/uploads/2011/09/Cines-baratos.jpg" alt="fotocine">
-                    <a href="#" class="mt-2 text-end">Localización ></a>
+                    <img class="foto-cine rounded" src="https://unbuendiaenmadrid.com/wp-content/uploads/2011/09/Cines-baratos.jpg" alt="fotocine">
+                    <button class="btn btn-primary mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#modal-localizacion-opera">MOSTRAR LOCALIZACIÓN</button>
                     <hr>
+<!-- modal (pop-up localización) -->
+                    <div class="modal fade" id="modal-localizacion-opera" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex flex-column">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h2 class="modal-title fw-bold text-center" id="exampleModalLabel">CINEMANIAC ÓPERA</h2>
+                                    <h4>Dónde puedes encontrarnos:</h4>
+                                    <p>Calle mas calle tiqui calle, 3</p>
+                                </div>
+                            <div class="modal-body d-flex justify-content-center">
+                                <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5763811431652!2d-3.711910258875644!3d40.41823437155824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287bdc298c9b%3A0x14576465218f92e4!2zw5NwZXJh!5e0!3m2!1ses!2ses!4v1730119954664!5m2!1ses!2ses" height="400" width="500px"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
                 </article>
                 <article class="d-flex flex-column p-3 col-lg-4 col-sm-6">
-                    <h3>CINEMANIAC ÓPERA</h3>
+                    <h3 class="fw-bold fs-4">CINEMANIAC TRES CANTOS</h3>
                     <p>ISENSE · VOSE · ASIENTOS CHULIS</p>
-                    <img class="foto-cine" src="https://unbuendiaenmadrid.com/wp-content/uploads/2011/09/Cines-baratos.jpg" alt="fotocine">
-                    <a href="#" class="mt-2 text-end">Localización</a>
+                    <img class="foto-cine rounded" src="https://unbuendiaenmadrid.com/wp-content/uploads/2011/09/Cines-baratos.jpg" alt="fotocine">
+                    <button class="btn btn-primary mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#modal-localizacion-trescantos">MOSTRAR LOCALIZACIÓN</button>
                     <hr>
+<!-- modal (pop-up localización) -->
+                    <div class="modal fade" id="modal-localizacion-trescantos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex flex-column">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h2 class="modal-title fw-bold text-center" id="exampleModalLabel">CINEMANIAC TRES CANTOS</h2>
+                                    <h4>Dónde puedes encontrarnos:</h4>
+                                    <p>Calle tiquitón, 7</p>
+                                </div>
+                            <div class="modal-body d-flex justify-content-center">
+                                <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5763811431652!2d-3.711910258875644!3d40.41823437155824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287bdc298c9b%3A0x14576465218f92e4!2zw5NwZXJh!5e0!3m2!1ses!2ses!4v1730119954664!5m2!1ses!2ses" height="400" width="500px"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </article>
                 <article class="d-flex flex-column p-3 col-lg-4 col-sm-6">
-                    <h3>CINEMANIAC ÓPERA</h3>
+                    <h3 class="fw-bold fs-4">CINEMANIAC MAJADAHONDA</h3>
                     <p>ISENSE · VOSE · ASIENTOS CHULIS</p>
-                    <img class="foto-cine" src="https://unbuendiaenmadrid.com/wp-content/uploads/2011/09/Cines-baratos.jpg" alt="fotocine">
-                    <a href="#" class="mt-2 text-end">Localización</a>
+                    <img class="foto-cine rounded" src="https://unbuendiaenmadrid.com/wp-content/uploads/2011/09/Cines-baratos.jpg" alt="fotocine">
+                    <button class="btn btn-primary mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#modal-localizacion-majadahonda">MOSTRAR LOCALIZACIÓN</button>
                     <hr>
+<!-- modal (pop-up localización) -->
+                    <div class="modal fade" id="modal-localizacion-majadahonda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex flex-column">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h2 class="modal-title fw-bold text-center" id="exampleModalLabel">CINEMANIAC MAJADAHONDA</h2>
+                                    <h4>Dónde puedes encontrarnos:</h4>
+                                    <p>Avenida trisquitrisquins, 151</p>
+                                </div>
+                            <div class="modal-body d-flex justify-content-center">
+                                <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5763811431652!2d-3.711910258875644!3d40.41823437155824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287bdc298c9b%3A0x14576465218f92e4!2zw5NwZXJh!5e0!3m2!1ses!2ses!4v1730119954664!5m2!1ses!2ses" height="400" width="500px"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
                 </article>
             </div>
         </section>
     </main>
+    <!-- footer -->
     <footer class="text-secondary container text-center mt-5">
         <div class="row">
             <ul class=" d-flex flex-column col-lg-3 col-6">
@@ -111,7 +165,7 @@
                 <a>footer text 1</a>
             </ul>
         </div>
-        <div class="text-center mb-4 social-media-icons">
+        <div class="text-center mb-4 social-media-icons text-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                     <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
                 </svg>
