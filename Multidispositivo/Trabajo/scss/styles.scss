@@ -1,0 +1,104 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// Personalización de colores y variables con Sass
+$primary-color: #1FABAB;  // Naranja como color primario
+$secondary-color: #def5ff;  // Azul como color secundario
+$hover-color: #35dfdf;  // Rojo para hover
+// $border-radius-value: 10px;  // Borde redondeado global
+
+@mixin dimension($width, $heigth){
+    width: $width;
+    height: $height;
+}
+
+@mixin image-style($max-height, $object-position: 100% 80%){
+    max-height: $max-height;
+    object-fit: cover;
+    object-position: $object-position;
+}
+
+.c-img{
+    @include image-style(40vh);
+}
+
+
+@mixin scrollbar($width, $bg-color, $thumb-color){
+    &::-webkit-scrollbar {
+        width: $width;
+        border-radius: 5px;
+        background-color: $bg-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumb-color;
+        border-radius: 5px;
+    }
+}
+
+body{
+    @include scrollbar(5px, #212529, white);
+}
+
+
+@mixin deviceSize($size){
+    @if $size == 'sm'{
+        @media (width:400px){
+            @content;
+        }
+    } @else if $size == 'lg'{
+        @media (min-width:1610px){
+            @content;
+        }
+    }
+}
+
+.proximos-lanzamientos{
+    @include deviceSize(lg){
+        margin-top:6rem;
+        margin-right:2rem;
+        padding:0;  
+        display:block;
+        background-color:black;
+        @include dimension(400px, 800px);
+    }
+}
+
+.proximos-lanzamientos > iframe{
+    @include deviceSize(lg){
+        @include dimension(100%, 100%);
+    }
+    
+}
+
+.push-left{
+    @include deviceSize(lg){
+        max-width:1210px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+}
+
+.navbar{
+    @include deviceSize(sm){
+        display:none;
+    }
+    
+}
+footer{
+    @include deviceSize(sm){
+        display:none;
+    }
+}
+.margen-navbar{
+    @include deviceSize(sm){
+        display:none;
+    }
+}
+body{
+    @include deviceSize(sm){
+        overflow-x:hidden;
+    }
+}
