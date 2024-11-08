@@ -1,10 +1,11 @@
+/*MARGEN PARA QUE LA NAVBAR NO TAPE CONTENIDO*/
 .margen-navbar{
     height:100px;
 }
-
-table img{
-    max-height:300px;
+.text-shadow{
+    text-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
 }
+/*CONFIGURACIONES CAROUSEL*/
 #carouselExampleControls{
     max-width:300px;
 }
@@ -14,19 +15,34 @@ table img{
 .c-img{
     height:100%;
     object-fit:cover;
-    object-position: 100% 80%;
     max-height:40vh;
 }
 #hero-carousel{
     max-height:40vh;
 }
+/*CARTELES DE PELÍCULAS EN PEQUEÑO*/
 .minicartel{
-    max-width:300px;
     width:100%;
+    max-width:300px;
 }
-.main-content{
-    margin-top:10vh;
+.minicartel img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
 }
+.cartel-hover{
+    cursor:pointer
+}
+.cartel-hover:hover{
+    max-width:320px;
+    transition-duration:.2s;
+    box-shadow: 0px 0px 50px black !important;
+}
+/*FOTO DE LOS CINES*/
+.foto-cine{
+    max-width:400px;
+}
+/*SETTINGS PARA EL IFRAME DE PROXIMOS LANZMIENTOS*/
 .proximos-lanzamientos{
     display:none;
 }
@@ -37,7 +53,6 @@ table img{
         margin-right:auto;
     }
     .proximos-lanzamientos{
-        margin-top:6rem;
         margin-right:2rem;
         padding:0;  
         display:block;
@@ -50,7 +65,36 @@ table img{
         height:100%;
     }
 }
-
-.selected-nav{
-    background-color:#212529;
+@media (width:400px){
+    .navbar-p{
+        display:none;
+    }
+    .footer-p{
+        display:none;
+    }
+    .margen-navbar{
+        display:none;
+    }
+    .body-p{
+        overflow-x:hidden;
+    }
 }
+/*SETTINGS DE LOS INPUTS DE SOCIO.HTML*/
+/*TODO: ESTO HAY QUE PASARLO A SASS*/
+.input-form{
+    border-top:none !important;
+    border-left:none !important;
+    border-right:none !important;
+    border-radius:0 !important;
+    padding-left:2px !important;
+    background-color:#212529 !important;
+    color-scheme: dark !important;
+    color:#6C757D !important;
+}
+input:focus{
+    outline:0 !important;
+}
+.input-form::placeholder{
+    color:rgb(90, 96, 101) !important;
+}
+/*ESTO HAY QUE PASARLO A SASS*/

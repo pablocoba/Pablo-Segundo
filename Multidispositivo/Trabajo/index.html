@@ -13,7 +13,7 @@
     <header style="align-items:start">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top top-0 p-0">
             <div class="container">
-                <a class="navbar-brand fw-bold fs-3 p-3 selected-nav text-primary" href="index.html">CINEMANIAC</a>
+                <a class="navbar-brand fw-bold fs-3 p-3 text-primary" href="index.html">CINEMANIAC</a>
                 <button class="navbar-toggler p-3" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,37 +58,42 @@
             </div>
         </nav>
     </header>
-
+    <div class="margen-navbar"></div>
     <main class="container-fluid">
         <div class="row">
             <!-- carrousel -->
-            <div class="main-content push-left">
+            <div class="push-left">
                 <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active c-item">
-                            <div class="carousel-caption bottom-0 mt-4 fs-5 d-none d-md-block text-black">
-                                <h1 class="display-1 fw-bolder text-capitalize">The Substance</h1>
-                                <p class="fs-3 text-uppercase">uuuu que miedo como molaaaa</p>
+                            <!--texto encima del carrousel, hay que hacer que tenga un bg con poca opacidad-->
+                            <div class="carousel-caption bottom-0 mt-4 fs-5 d-none d-md-block">
+                                <h1 class="text-shadow text-white display-1 fw-bolder text-uppercase">THE SUBSTANCE</h1>
+                                <button class="btn btn-primary">Comprar Entradas</button>
                             </div>
-                            <img src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg"
+                            <img src="img/subs-car.jpg"
                                 class="d-block w-100 c-img" alt="...">
                         </div>
-                        <div class="carousel-item c-item">
-                            <div class="carousel-caption bottom-0 mt-4 fs-5 d-none d-md-block text-black">
-                                <h1 class="display-1 fw-bolder text-capitalize">The Substance OTRA VEZ</h1>
-                                <p class="fs-3 text-uppercase">te has cagao primo</p>
+                        <div class="carousel-item active c-item">
+                            <!--texto encima del carrousel, hay que hacer que tenga un bg con poca opacidad-->
+                            <div class="carousel-caption bottom-0 mt-4 fs-5 d-none d-md-block">
+                                <h1 class="text-shadow text-white display-1 fw-bolder text-uppercase">Venom II</h1>
+                                <button class="btn btn-primary">Comprar Entradas</button>
                             </div>
-                            <img src="https://pics.filmaffinity.com/La_sustancia-265285928-large.jpg"
+                            <img src="img/venom-car.jpeg"
                                 class="d-block w-100 c-img" alt="...">
                         </div>
-                        <div class="carousel-item c-item">
-                            <div class="carousel-caption bottom-0 mt-4 fs-5 d-none d-md-block text-black">
-                                <h1 class="display-1 fw-bolder text-capitalize">The Substance AGAIN</h1>
-                                <p class="fs-3 text-uppercase">uuuu que miedo como molaaaa</p>
+                        <div class="carousel-item active c-item">
+                            <!--texto encima del carrousel, hay que hacer que tenga un bg con poca opacidad-->
+                            <div class="carousel-caption bottom-0 mt-4 fs-5 d-none d-md-block">
+                                <h1 class="text-shadow text-white display-1 fw-bolder text-uppercase">Amigo Robot</h1>
+                                <button class="btn btn-primary">Comprar Entradas</button>
                             </div>
-                            <img src="https://m.media-amazon.com/images/I/41fSQcJluPL._AC_UF894,1000_QL80_.jpg"
+                            <img src="img/robot-car.jpg"
                                 class="d-block w-100 c-img" alt="...">
                         </div>
+                        
+                        
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
                         data-bs-slide="prev">
@@ -106,35 +111,39 @@
                     <h1 class="mt-5 fw-bold text-primary">Top Películas</h1>
                     <div class="row">
                         <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
+                            <img class="minicartel cartel-hover shadow-lg" src="img/substance-mini.jpg" alt="">
+                            <h3 class="fs-4 mt-2 text-uppercase">The Substance</h3>
+                        </article>
+                        <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
+                            <img class="minicartel cartel-hover shadow-lg" src="img/robot-mini.jpg" alt="">
+                            <h3 class="text-uppercase fs-4 mt-2">Amigo Robot</h3>
+                        </article>
+                        <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
+                            <img class="minicartel cartel-hover shadow-lg" src="img/venom-mini.jpeg" alt="">
+                            <h3 class="text-uppercase fs-4 mt-2">Venom II</h3>
+                        </article>
+                        <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
+                            <img class="minicartel cartel-hover shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
                             <h3 class="fs-4 mt-2">The substance</h3>
                         </article>
                         <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
+                            <img class="minicartel cartel-hover shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
                             <h3 class="fs-4 mt-2">The substance</h3>
                         </article>
                         <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
+                            <img class="minicartel cartel-hover shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
                             <h3 class="fs-4 mt-2">The substance</h3>
                         </article>
                         <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
+                            <img class="minicartel cartel-hover shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
                             <h3 class="fs-4 mt-2">The substance</h3>
                         </article>
                         <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
+                            <img class="minicartel cartel-hover shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
                             <h3 class="fs-4 mt-2">The substance</h3>
                         </article>
                         <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
-                            <h3 class="fs-4 mt-2">The substance</h3>
-                        </article>
-                        <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
-                            <h3 class="fs-4 mt-2">The substance</h3>
-                        </article>
-                        <article class="mt-5 d-flex flex-column align-items-center col-lg-4 col-md-6 col-6">
-                            <img class="minicartel shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
+                            <img class="minicartel cartel-hover shadow-lg" src="https://x-surcine.com/wp-content/uploads/2024/10/JPG000kf-5.jpg" alt="">
                             <h3 class="fs-4 mt-2">The substance</h3>
                         </article>
 
@@ -153,8 +162,8 @@
 
     </main>
 
-    <!-- FOOTER -->
-    <footer class="text- container text-center mt-5">
+    <!-- FOOTER --> <!--DEBERÍAMOS HACER QUE EL FOOTER SEA FIXED Y TENGA UN MARGEN-->
+    <footer class="text-secondary container text-center mt-5">
         <div class="row">
             <ul class=" d-flex flex-column col-lg-3 col-6">
                 <a>diso plan dios plan dios plan</a>
@@ -162,7 +171,7 @@
                 <a>footer text 1</a>
             </ul>
             <ul class=" d-flex flex-column col-lg-3 col-6">
-                <a>footer text 1</a>
+                <a href="socio.html">Hazte Socio</a>
                 <a>footer text 1</a>
                 <a>footer text 1</a>
             </ul>
