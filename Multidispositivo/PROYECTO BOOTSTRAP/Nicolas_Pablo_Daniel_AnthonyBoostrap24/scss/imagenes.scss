@@ -1,0 +1,13 @@
+@import 'mixins';
+table img{
+    @include maxDimensiones(300px);
+}
+
+.foto-cine{
+    @include maxDimensiones(400px);
+}
+
+.minicartel{
+    @include maxDimensiones(300px);
+    @include dimensiones(100%);
+}

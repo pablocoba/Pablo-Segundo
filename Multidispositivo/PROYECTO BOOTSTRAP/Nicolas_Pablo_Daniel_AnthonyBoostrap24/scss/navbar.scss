@@ -1,0 +1,25 @@
+@import 'mixins';
+.margen-navbar{
+    @include margenes(0);
+    @include dimensiones(null, 100px);
+}
+.selected-nav{
+     // Aplica el tema según la clase del body
+  &.light-theme {
+    background-color: $tertiary-color-light;  // Usa el color del tema claro
+    color: $text-color-light;  // Color de texto para el tema claro
+  }
+
+  &.dark-theme {
+    background-color: $tertiary-color-dark;  // Usa el color del tema oscuro
+    color: $text-color-dark;  // Color de texto para el tema oscuro
+  }
+
+  // Si tienes más estilos específicos para el navbar, añádelos aquí
+//   .navbar-link {
+//     color: inherit;  // Hereda el color del tema
+
+    &:hover {
+      color: $primary-color-light;  // Cambia el color al hacer hover (ajustar según el tema)
+    }
+  }

@@ -1,0 +1,33 @@
+
+@import 'variables';
+.proximos-lanzamientos{
+    display: none;
+    @include margenes(6rem, 2rem, 0, 0);
+    @include dimensiones(400px, 800px);
+    background-color: $black-bg;
+ 
+    > iframe{
+     @include dimensiones(100%, 100%);
+    }
+ }
+ 
+@include deviceSize('lg'){
+    .push-left{
+        @include maxDimensiones(1210px);
+        @include margenes(auto);
+    }
+
+    .proximos-lanzamientos{
+        display:block;
+    }
+}
+
+
+@include deviceSize('sm'){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar, .margen-navbar, footer{
+        display: none;
+    }
+}

@@ -1,0 +1,100 @@
+@import 'variables';
+
+//mixin dimensiones
+@mixin dimensiones($width: auto, $height: auto) {
+    width: $width;
+    height: $height; 
+  }
+
+@mixin maxDimensiones($max-width: auto, $max-height: auto){
+    max-width: $max-width;
+    max-height: $max-height;
+}
+
+//mixin imagen
+@mixin image-style($height, $max-height, $object-position: 100% 80%){
+    @include dimensiones(auto, $height);
+    @include maxDimensiones(auto, $max-height);
+    object-fit: cover;
+    object-position: $object-position;
+}
+
+
+//mixin barra de scroll
+@mixin scrollbar($width, $bg-color, $thumb-color){
+    &::-webkit-scrollbar {
+        width: $width;
+        border-radius: $border-radius-value;
+        background-color: $bg-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumb-color;
+        border-radius: $border-radius-value;
+    }
+}
+
+
+//mixin media query
+@mixin deviceSize($size){
+    @if $size == 'sm'{
+        @media (max-width: 400px){
+            @content;
+        }
+    } @else if $size == 'lg'{
+        @media (min-width:1610px){
+            @content;
+        }
+    }
+}
+
+
+//mixin margenes
+@mixin margenes($top: 0, $right: $top, $bottom: $top, $left: $right){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+
+// Mixin para aplicar el tema claro
+@mixin light-theme {
+    background-color: $background-color-light;
+    color: $text-color-light;
+  
+    // Otros estilos del tema claro
+    a {
+      color: $primary-color-light;
+    }
+  
+    button {
+      background-color: $primary-color-light;
+      color: $text-color-light;
+      
+      &:hover {
+        background-color: $hover-color-light;
+      }
+    }
+  }
+  
+  // Mixin para aplicar el tema oscuro
+  @mixin dark-theme {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  
+    // Otros estilos del tema oscuro
+    a {
+      color: $primary-color-dark;
+    }
+  
+    button {
+      background-color: $primary-color-dark;
+      color: $text-color-dark;
+      
+      &:hover {
+        background-color: $hover-color-dark;
+      }
+    }
+  }
+  

@@ -1,0 +1,17 @@
+@import 'mixins';
+
+#carouselExampleControls{
+    @include maxDimensiones(300px);
+}
+
+#hero-carousel{
+    @include maxDimensiones(null, 40vh);
+}
+
+.c-item{
+    @include maxDimensiones(null, 480px);
+}
+
+.c-img{
+    @include image-style(100%, 40vh);
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+body.light-theme{
+    @include light-theme;
+    @include scrollbar(5px, $tertiary-color-light, $secondary-color-light);
+}
+
+body.dark-theme {
+    @include dark-theme;
+    @include scrollbar(5px, $tertiary-color-dark, $secondary-color-dark);
+  }
+
+.main-content{
+    @include margenes(10vh, 0, 0, 0);
+}
+
+h1, h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
