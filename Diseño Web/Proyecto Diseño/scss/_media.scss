@@ -1,0 +1,52 @@
+@import "./variables";
+@import "./mixins.scss";
+
+//quizás incluir uno para dispositivos medianos.
+@media (max-width:$mobile-screen){
+    //que los párrafos sin customizar cambien de tamaño a 1.1rem cuando se haga peque.
+    p{
+        @include font-size(p-mobile);
+    }
+    .front-page{
+        height:100svh;
+        div{
+            max-width:70vw;
+            margin-right:auto;
+            margin-left:1.5rem;
+            margin-bottom:4vh;
+        }
+        h1{
+            @include font-size(h1-mobile);
+        }
+    }
+    .navbar{
+        justify-content:space-between;
+        li:nth-child(-n+8){
+            display:none;
+        }
+        .inicio-registro{
+            display:none;
+        }
+        li:nth-child(1){
+            display:block;
+        }
+        li:nth-child(2){
+            display:block;
+        }
+        li:nth-child(8){
+            display:block;
+        }
+        padding: 0;
+    }
+    .tarjeta-home{
+        div:nth-child(2){
+            padding:.75rem 1rem 1.5rem 1rem;
+        }
+        div:nth-child(2)>p{
+            padding:.75rem 1rem 1.5rem 1rem;
+        }
+    }
+    .grid-tarjetas-home{
+        grid-template-columns: 1fr;
+    }
+}

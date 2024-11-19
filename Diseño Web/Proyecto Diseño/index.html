@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="icon" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="logo"><a href="#"><img src="./img/logo-1.webp"></a></li>
+                <li>
+                    <a href="#">Eventos</a>
+                    <ul class="dropdown">
+                        <li class="drop"><a href="#">Próximo Evento</a></li>
+                        <li class="drop"><a href="#">Eventos Pasados</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Mapa</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Regiones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Roles</a></li>
+                <li>
+                    <a href="#">Comunidad</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Clasificación</a></li>
+                    </ul>
+                </li>
+                <div class="inicio-registro">
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><a href="#">Registro</a></li>
+                </div>
+                <li class="icon" onclick=showProfilebar()><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg></a>
+                </li>
+            </ul>
+            <ul class="sidebar">
+                <li  class="icon" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">LOGO</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Mapa</a></li>
+                <li><a href="#">Roles</a></li>
+                <li><a href="#">Comunidad</a></li>
+            </ul>
+            <ul class="profile-sidebar">
+                <li  class="icon" onclick=hideProfilebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Gremio</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="front-page">
+                <div>
+                    <h1>ARCANTHIA</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsam soluta culpa molestiae quas totam modi cupiditate. Exercitationem veniam ea voluptas fugit nesciunt recusandae deleniti, molestiae tempore incidunt amet facere, veritatis culpa nam libero vero non beatae, deserunt ullam odit!</p>
+                    <button>INSCRIBIRSE</button>
+                </div>
+            </div>
+        </section>
+        <section class="grid-tarjetas-home">
+            <article class="tarjeta-home"> 
+                <div>
+                </div>
+                <div>
+                    <small>12 de Diciembre</small>
+                    <h3>✥ Último Evento: París ✥</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tenetur cum alias sunt eaque. A illo, maxime assumenda velit ad doloribus atque repellendus eveniet! Ipsa facere dignissimos veritatis non sapiente.</p>
+                    <button class="boton-rojo">Inscribete ya</button>
+                    <button>Más información</button>
+                </div>
+            </article>
+            <article class="tarjeta-home"> 
+                <div>
+                </div>
+                <div>
+                    <small>Explora el mundo:</small>
+                    <h3>✥ Mapa de Arcanthia ✥</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tenetur cum alias sunt eaque. A illo, maxime assumenda velit ad doloribus atque repellendus eveniet! Ipsa facere dignissimos veritatis non sapiente.  Ipsa facere dignissimos veritatis non sapiente.</p>
+                    <button>Más información</button>
+                </div>
+            </article>
+            <article class="tarjeta-home"> 
+                <div>
+                </div>
+                <div>
+                    <small>Escoge tu favorito</small>
+                    <h3>✥ Roles ✥</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptatem architecto dicta minus sint temporibus veniam fuga unde dolorum iusto!</p>
+                    <button class="boton-rojo">Inscribete ya</button>
+                    <button>Más información</button>
+                </div>
+            </article>
+            <article class="tarjeta-home"> 
+                <div>
+                </div>
+                <div>
+                    <small>Conecta con tus compañeros</small>
+                    <h3>✥ Comunidad ✥</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati mollitia voluptatibus porro? Inventore voluptatum tempore eos asperiores, maiores voluptas vero expedita. Ducimus libero ut nisi laudantium nulla vero fugiat ipsa recusandae ratione, non ipsam quae quo sed eveniet natus expedita eum? Itaque maxime quibusdam quisquam dolor, obcaecati voluptate accusamus.</p>
+                    <button class="boton-rojo">Busca un gremio</button>
+                    <button>Más información</button>
+                </div>
+            </article>
+            <article class="tarjeta-home"> 
+                <div>
+                </div>
+                <div>
+                    <small>Conecta con tus compañeros</small>
+                    <h3>✥ Comunidad ✥</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati mollitia voluptatibus porro? Inventore voluptatum tempore eos asperiores, maiores voluptas vero expedita. Ducimus libero ut nisi laudantium nulla vero fugiat ipsa recusandae ratione, non ipsam quae quo sed eveniet natus expedita eum? Itaque maxime quibusdam quisquam dolor, obcaecati voluptate accusamus.</p>
+                    <button class="boton-rojo">Busca un gremio</button>
+                    <button>Más información</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.classList.add('visible');
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.classList.remove('visible');
+        }
+        function showProfilebar(){
+            const sidebar = document.querySelector('.profile-sidebar')
+            sidebar.classList.add('visible');
+        }
+        function hideProfilebar(){
+            const sidebar = document.querySelector('.profile-sidebar')
+            sidebar.classList.remove('visible');
+        }
+    </script>
+</body>
+</html>

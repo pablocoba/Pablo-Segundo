@@ -1,0 +1,114 @@
+$text-primary:#f1f2fc;
+$text-secondary:#c6cbff;
+$background-color:#101A48;
+$primary-color:#15267E;
+$secondary-color:#6A2020;
+$secondary-color-hover:#8b1010;
+$highlight-color:#D1AD2F;
+$highlight-color-hover:#ffd439;
+$detail-color:#816501;
+$mobile-screen:1000px;
+
+$font-sizes:(
+
+    h1-pc:(
+        font-size:3.5rem
+    ),
+    h1-mobile:(
+        font-size:2.75rem
+    ),
+    h2-pc:(
+        font-size:2.5rem
+    ),
+    h2-mobile:(
+        font-size:2.5rem
+    ),
+    h3-pc:(
+        font-size:1.75rem
+    ),
+    h3-mobile:(
+        font-size:1.75rem
+    ),
+    h4-pc:(
+        font-size:1.5rem
+    ),
+    h4-mobile:(
+        font-size:1.5rem
+    ),
+    p-pc:(
+        font-size:1rem
+    ),
+    p-mobile:(
+        font-size:1.1rem
+    ),
+    small-pc:(
+        font-size:.925rem
+    ),
+    small-mobile:(
+        font-size:.825rem
+    ),
+    li:(
+        font-size:1.1rem 
+    ),
+    button:(
+        font-size:1.1rem  
+    )
+);
+
+$fonts: (
+normal: (
+    font-family: 'Helvetica',
+    font-weight: normal,
+    font-style: normal
+),
+bold: (
+    font-family: 'Helvetica-Bold',
+    font-weight: bold,
+    font-style: normal
+),
+bold-oblique: (
+    font-family: 'Helvetica-Bold-Oblique',
+    font-weight: bold,
+    font-style: oblique
+),
+oblique: (
+    font-family: 'Helvetica-Oblique',
+    font-weight: normal,
+    font-style: oblique
+),
+rounded-bold: (
+    font-family: 'Helvetica-Rounded-Bold',
+    font-weight: bold,
+    font-style: normal
+),
+light: (
+    font-family: 'Helvetica-Light',
+    font-weight: normal,
+    font-style: normal
+),
+megrath: (
+        font-family:'Megrath',
+        letter-spacing: 1px
+    )
+);
+
+$foto-tarjeta: (
+    principal:(
+        background-image:(linear-gradient(to left, rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/2.webp"))
+    ),
+    eventos:(
+        background-image:(linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/eventos.webp"))
+    ),
+    personajes:(
+        background-image:(linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/personajes.webp"))
+    ),
+    mapa:(
+        background-image:(linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/mapa.webp"))
+    ),
+    comunidad:(
+        background-image:(linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/comunidad.webp"))
+    ),
+    default:(
+        background-image:(linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/2.webp"))
+    )
+);

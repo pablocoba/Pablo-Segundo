@@ -1,0 +1,32 @@
+@mixin font-style($font-key) {
+
+    @if map-has-key($fonts, $font-key) {
+        $font: map-get($fonts, $font-key);
+        font-family: map-get($font, font-family);
+        font-weight: map-get($font, font-weight);
+        font-style: map-get($font, font-style);
+        letter-spacing: map-get($font, letter-spacing);
+    } 
+    @else {
+        @warn "La fuente #{$font-key} no está definida en el mapa.";
+    }
+}
+@mixin font-size($size-key){
+    @if map-has-key($font-sizes, $size-key){
+        $size: map-get($font-sizes, $size-key);
+        font-size: map-get($size, font-size);
+    }
+    @else{
+        @warn "El tamaño #{$size-key} no está definido en el mapa.";
+    }
+}
+
+@mixin image($img-key){
+    @if map-has-key($foto-tarjeta, $img-key){
+        $foto: map-get($foto-tarjeta, $img-key);
+        background-image: map-get($foto, background-image);
+    }
+    @else{
+        @warn "La foto #{$img-key} no está definido en el mapa.";
+    }
+}
