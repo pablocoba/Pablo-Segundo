@@ -107,6 +107,7 @@ button {
 }
 body {
   background: #000;
+  text-wrap: balance;
 }
 
 h1 {
