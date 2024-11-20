@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul class="navbar">
-                <li class="icon toggle-btn" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="icon" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 <li class="logo"><a href="index.html"><img src="./img/logo-1.webp"></a></li>
                 <li>
                     <a id="eventos" href="eventos.html">Eventos</a>
@@ -28,7 +28,7 @@
                 </li>
                 <li><a id="roles" href="roles.html">Roles</a></li>
                 <li>
-                    <a id="comunidad" href="comunidad.html">Comunidad</a>
+                    <a  id="comunidad" href="comunidad.html">Comunidad</a>
                     <ul class="dropdown">
                         <li><a href="#">Clasificación</a></li>
                     </ul>
@@ -37,21 +37,21 @@
                     <li><a href="#">Iniciar Sesión</a></li>
                     <li><a href="#">Registro</a></li>
                 </div>
-                <li class="icon toggle-btn" onclick=showProfilebar()><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <li class="icon" onclick=showProfilebar()><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                 </svg></a>
                 </li>
             </ul>
-            <ul id="sidebar" class="sidebar">
-                <li  class="icon toggle-btn" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <ul class="sidebar">
+                <li  class="icon" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#">LOGO</a></li>
                 <li><a href="#">Eventos</a></li>
                 <li><a href="#">Mapa</a></li>
                 <li><a href="#">Roles</a></li>
                 <li><a href="#">Comunidad</a></li>
             </ul>
-            <ul id="profile-sidebar" class="profile-sidebar toggle-btn">
+            <ul class="profile-sidebar">
                 <li  class="icon" onclick=hideProfilebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#">Iniciar Sesión</a></li>
                 <li><a href="#">Registro</a></li>

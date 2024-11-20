@@ -221,9 +221,20 @@ hr {
   padding: 0.75rem 1rem;
 }
 .navbar li a {
+  text-decoration: none;
+  position: relative;
   color: #D1AD2F;
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
   transition: 0.2s ease-in-out;
+}
+.navbar li a.active::after {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(209, 173, 47, 0.75) 20%, rgba(209, 173, 47, 0.75) 80%, rgba(0, 0, 0, 0) 100%);
+  width: 120%;
+  height: 1px;
+  bottom: 0;
+  left: -10%;
 }
 .navbar li a:hover {
   color: #ffd439;
@@ -271,7 +282,7 @@ hr {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 80vw;
   z-index: 999;
   background-color: #6A2020;
@@ -302,7 +313,7 @@ hr {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   width: 80vw;
   z-index: 999;
   background-color: #6A2020;

@@ -98,10 +98,20 @@ hr{
         margin:.225rem;
         padding: .75rem 1rem;
         a{
+            text-decoration:none;
+            position:relative;
             color:$highlight-color;
-            text-shadow:
-            0px 0px 15px rgb(0,0,0,0.7);
+            text-shadow: 0px 0px 15px rgb(0,0,0,0.7);
             transition:0.2s ease-in-out;
+            &.active::after{
+                position:absolute;
+                content:'';
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb($highlight-color, 0.75) 20%, rgb($highlight-color, 0.75) 80%, rgba(0, 0, 0, 0) 100%);
+                width:120%;
+                height:1px;
+                bottom:0;
+                left:-10%;
+            }
         }
         a:hover{
             color:$highlight-color-hover;
@@ -158,7 +168,7 @@ hr{
     position:fixed;
     top:0;
     left:0;
-    height:100vh;
+    height:100%;
     width:80vw;
     z-index:999;
     background-color:$secondary-color;
@@ -187,7 +197,7 @@ hr{
     position:fixed;
     top:0;
     right:0;
-    height:100vh;
+    height:100%;
     width:80vw;
     z-index:999;
     background-color:$secondary-color;
@@ -303,7 +313,6 @@ hr{
     }
 
 }
-
 .boton-rojo{
     margin:1rem 1rem 0 1rem;
     color:$highlight-color;
