@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset=" uTF-8">
+  <title>Explorar DOM</title>
+  <style>
+    .activo {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <ol>
+    <li id='abuelo' class='activo'>Abuelo</li>
+    <ol>
+      <li>Padre</li>
+      <ol>
+        <li>Hijo mayor</li>
+        <li>Hijo mediano</li>
+        <li>Hijo menor</li>
+      </ol>
+    </ol>
+  </ol>
+  <button type='button' id='btnPrimerHijo' onclick='primerHijo();'>firstChild</button>
+  <button type='button' id='btnUltimoHijo' onclick='ultimoHijo();'>lastChild</button>
+  <button type='button' id='btnAnteriorHermano' onclick='anteriorHermano();'>previousElementSibling</button>
+  <button type='button' id='btnSiguienteHermano' onclick='siguienteHermano();'>nextElementSibling</button>
+  <button type='button' id='btnPadre' onclick='padre();'>parentElement</button>
+  <script>
+
+
+
+    function cambiarElementoActivo(elemento) {
+      elementoActivo.className = '';
+      elemento.className = 'activo';
+      elementoActivo = elemento;
+    }
+
+    function padre(){
+      if(elementoActivo.parentElement != null){
+          cambiarElementoActivo(elementoActivo.parentElement.previousElementSibling)
+      }
+    }
+    
+    function primerHijo() {
+      if (elementoActivo.nextElementSibling != null) {
+        if (elementoActivo.nextElementSibling.nodeName == 'OL') {
+          cambiarElementoActivo(elementoActivo.nextElementSibling.querySelectorAll('li')[0]);
+        }
+      }
+    }
+
+
+    function ultimoHijo() {
+      let siguienteHermano = elementoActivo.nextElementSibling;
+      if (siguienteHermano !== null && siguienteHermano.nodeName === 'OL') {
+        let ultimoHijo = siguienteHermano.lastElementChild;
+
+        // Encuentra el último elemento li dentro del siguiente OL
+        if (ultimoHijo !== null && ultimoHijo.nodeName == 'OL') {
+          ultimoHijo = ultimoHijo.previousElementSibling;   
+        }
+        cambiarElementoActivo(ultimoHijo);
+
+      }
+    }
+
+    function siguienteHermano() {
+      if (elementoActivo.nextElementSibling != null) {
+        if (elementoActivo.nextElementSibling.nodeName == 'LI') {
+          cambiarElementoActivo(elementoActivo.nextElementSibling);
+        }
+      }
+    }
+    function anteriorHermano() {
+      if (elementoActivo.previousElementSibling != null) {
+        if (elementoActivo.previousElementSibling.nodeName == 'LI') {
+          cambiarElementoActivo(elementoActivo.previousElementSibling);
+        }
+      }
+    }
+    var elementoActivo = document.getElementById('abuelo');
+
+  </script>
+</body>
+
+</html>

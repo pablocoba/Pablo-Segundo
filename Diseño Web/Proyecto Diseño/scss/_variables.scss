@@ -94,7 +94,7 @@ megrath: (
 
 $foto-tarjeta: (
     principal:(
-        background-image:(linear-gradient(to left, rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/2.webp"))
+        background-image:(linear-gradient(to left, rgb(255, 255, 255,0),rgb(0, 0, 0) 80%),url("../img/2.webp"))
     ),
     eventos:(
         background-image:(linear-gradient(rgb(255, 255, 255,0),rgb(0, 0, 0)),url("../img/eventos.webp"))
