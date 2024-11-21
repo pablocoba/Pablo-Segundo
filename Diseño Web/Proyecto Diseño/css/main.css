@@ -21,7 +21,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-a:not([class]) {
+a {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
   text-decoration: none;
@@ -105,6 +105,38 @@ button {
   font-weight: normal;
   font-style: normal;
 }
+.swiper {
+  height: 100%;
+}
+
+.card-wrapper .swipper-slide-button {
+  opacity: 0;
+  width: 180px;
+  height: 300px;
+  margin-top: -150px;
+}
+
+@media (max-width: 1000px) {
+  .card-wrapper .swipper-slide-button {
+    display: none;
+  }
+}
+.pagination-margin {
+  margin-top: 100px;
+  padding-top: 200px;
+}
+
+.card-wrapper {
+  margin: 0 60px 35px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 7px;
+  width: 30px;
+  border-radius: 0;
+  background: red;
+}
+
 body {
   background: #000;
   text-wrap: balance;
@@ -120,9 +152,8 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  font-family: "Helvetica-Bold";
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Megrath";
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -162,9 +193,9 @@ li {
   line-height: 1.6;
 }
 
-footer {
+footer a {
   font-size: 0.925rem;
-  font-family: "Helvetica-Light";
+  font-family: "Helvetica";
   font-weight: normal;
   font-style: normal;
   line-height: 1.6;
@@ -417,6 +448,26 @@ hr {
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url("../img/comunidad.webp");
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.margen-navbar {
+  height: 10rem;
+}
+
 .boton-rojo {
   margin: 1rem 1rem 0 1rem;
   color: #D1AD2F;
@@ -429,6 +480,30 @@ hr {
   background: #8b1010;
   color: #ffd439;
   border-color: #ffd439;
+}
+
+.card-list .card-item .card-link {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 300px;
+  border: 3px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image {
+  aspect-ratio: 9/16;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.character-info {
+  display: flex;
+}
+
+.character-items div {
+  display: flex;
 }
 
 @media (max-width: 1000px) {

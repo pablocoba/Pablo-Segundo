@@ -18,7 +18,7 @@ ul[role='list'], ol[role='list'], li{
 html:focus-within{
     scroll-behavior: smooth; 
 }
-a:not([class]){
+a{
     text-decoration-skip-ink: auto; 
     text-decoration:none;
     

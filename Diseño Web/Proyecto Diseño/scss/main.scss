@@ -2,7 +2,7 @@
 @import "./fonts";
 @import "./variables";
 @import "./mixins";
-
+@import "./swiper";
 
 body{
     background:#000;
@@ -16,7 +16,7 @@ h1{
 }
 h2{
     @include font-size(h2-pc);
-    @include font-style(bold);
+    @include font-style(megrath);
 }
 h3{
     @include font-size(h3-pc);
@@ -42,9 +42,9 @@ li{
     @include font-style(megrath);
     line-height:1.6;
 }
-footer{
+footer a{
     @include font-size(small-pc);
-    @include font-style(light);
+    @include font-style(normal);
     line-height:1.6;
 }
 button{
@@ -313,6 +313,25 @@ hr{
     }
 
 }
+footer{
+    position:fixed;
+    bottom:0;
+    left: 50%; //lo pone a mitad de la pantalla
+    transform: translateX(-50%); //lo mueve un 50% de su ancho hacia la izquierda
+                                //sin esto, queda desplazado hacia la derecha
+}
+.footer-list{
+    display:flex;
+    flex-direction:row;
+    margin:1rem;
+    gap:1rem;
+    justify-content:center;
+    align-items:center;
+}
+.margen-navbar{
+    height:10rem;
+}
+
 .boton-rojo{
     margin:1rem 1rem 0 1rem;
     color:$highlight-color;
@@ -325,6 +344,26 @@ hr{
     background:$secondary-color-hover;
     color:$highlight-color-hover;
     border-color:$highlight-color-hover;
+}
+.card-list .card-item .card-link{
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    max-width:300px;
+    border: 3px solid red;
+    border-radius:10px;
+    overflow:hidden;
+}
+.card-image{
+    aspect-ratio:9/16;
+    object-fit: cover;
+}
+
+.character-info{
+    display:flex;
+}
+.character-items div{
+    display:flex;
 }
 
 @import "./media"; //ESTO ESTÁ AQUÍ ABAJO PORQUE SINO NO FUNCIONA.

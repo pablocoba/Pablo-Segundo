@@ -1,0 +1,27 @@
+.swiper {
+    height:100%;
+  }
+.card-wrapper .swipper-slide-button{
+    opacity:0;
+    width:180px;
+    height:300px;
+    margin-top:-150px;
+}
+@media (max-width:1000px){
+    .card-wrapper .swipper-slide-button{
+        display:none;
+    }
+}
+.pagination-margin{
+    margin-top:100px;
+    padding-top:200px;
+}
+.card-wrapper{
+    margin:0 60px 35px;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height:7px;
+    width:30px;
+    border-radius:0;
+    background:red;
+}
