@@ -134,7 +134,31 @@ button {
   height: 7px;
   width: 30px;
   border-radius: 0;
-  background: red;
+  background: #6A2020;
+}
+
+.card-list .card-item .card-link {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 300px;
+  border: 3px solid #6A2020;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image {
+  aspect-ratio: 9/16;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.character-info {
+  display: flex;
+}
+
+.character-items div {
+  display: flex;
 }
 
 body {
@@ -480,30 +504,6 @@ footer {
   background: #8b1010;
   color: #ffd439;
   border-color: #ffd439;
-}
-
-.card-list .card-item .card-link {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  max-width: 300px;
-  border: 3px solid red;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card-image {
-  aspect-ratio: 9/16;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.character-info {
-  display: flex;
-}
-
-.character-items div {
-  display: flex;
 }
 
 @media (max-width: 1000px) {

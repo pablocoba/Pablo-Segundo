@@ -345,26 +345,6 @@ footer{
     color:$highlight-color-hover;
     border-color:$highlight-color-hover;
 }
-.card-list .card-item .card-link{
-    display:flex;
-    justify-content:center;
-    margin:auto;
-    max-width:300px;
-    border: 3px solid red;
-    border-radius:10px;
-    overflow:hidden;
-}
-.card-image{
-    aspect-ratio:9/16;
-    object-fit: cover;
-}
-
-.character-info{
-    display:flex;
-}
-.character-items div{
-    display:flex;
-}
 
 @import "./media"; //ESTO ESTÁ AQUÍ ABAJO PORQUE SINO NO FUNCIONA.
 

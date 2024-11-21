@@ -101,7 +101,7 @@ const swiper = new Swiper('.card-wrapper', {
     }
 });
 
-
+//highlightea la tarjeta del medio.
 function fc() {
     const active = document.querySelector('.swiper-slide-active');  // Detecta el slide activo
     const todos = document.querySelectorAll('.swiper-slide')
