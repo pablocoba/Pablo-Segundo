@@ -2,12 +2,15 @@
 
 .swiper {
     height:100%;
+    max-width:1000px;
   }
 .card-wrapper .swipper-slide-button{
-    opacity:0;
-    width:180px;
-    height:300px;
-    margin-top:-150px;
+    width:320px;
+    height:480px;
+    margin-top:-260px;
+}
+.card-wrapper{
+    overflow:hidden;
 }
 @media (max-width:1000px){
     .card-wrapper .swipper-slide-button{
@@ -41,10 +44,40 @@
     aspect-ratio:9/16;
     object-fit: cover;
 }
-
-.character-info{
+.info-card{
+    border:1px solid $highlight-color;
+    max-width:400px;
+    padding: 1.5rem;
+    border-radius:5px;
+    background:linear-gradient($secondary-color, black);
     display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.character-description{
+    max-width:600px;
+}
+.character-info{
+    margin-top:1rem;
+    gap:1rem;
+    display:flex;
+    justify-content: center;
+
+    h3, h2{
+        color:$highlight-color;
+        text-shadow: 0px 0px 10px black;
+        margin-bottom:.25rem;
+        text-align:center;
+    }
+    p{
+        color:$text-primary;
+        margin:1rem;
+    }
 }
 .character-items div{
     display:flex;
+}
+
+.character-region{
+
 }

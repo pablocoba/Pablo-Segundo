@@ -1,5 +1,6 @@
+//el mixin pide una llave
 @mixin font-style($font-key) {
-
+    //si el mapa contiene la llave, devuelve los valores.
     @if map-has-key($fonts, $font-key) {
         $font: map-get($fonts, $font-key);
         font-family: map-get($font, font-family);
@@ -11,6 +12,7 @@
         @warn "La fuente #{$font-key} no está definida en el mapa.";
     }
 }
+
 @mixin font-size($size-key){
     @if map-has-key($font-sizes, $size-key){
         $size: map-get($font-sizes, $size-key);

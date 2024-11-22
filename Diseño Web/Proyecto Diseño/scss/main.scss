@@ -7,6 +7,8 @@
 body{
     background:#000;
     text-wrap:balance;
+    position:relative;
+    min-height:100vh;
 }
 h1{
     @include font-size(h1-pc);
@@ -314,11 +316,15 @@ hr{
 
 }
 footer{
-    position:fixed;
+    position:absolute;
     bottom:0;
     left: 50%; //lo pone a mitad de la pantalla
-    transform: translateX(-50%); //lo mueve un 50% de su ancho hacia la izquierda
-                                //sin esto, queda desplazado hacia la derecha
+    transform: translateX(-50%); //lo mueve un 50% de su ancho hacia la izquierda     
+                                 //sin esto, queda desplazado hacia la derecha
+}
+.footer-margin{
+    height:60px;
+    width:100%;
 }
 .footer-list{
     display:flex;
