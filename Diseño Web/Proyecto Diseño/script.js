@@ -125,7 +125,8 @@ function fc() {
     
 }
 fc()
-document.addEventListener("click", fc)
+document.addEventListener("click", fc) //cuando detecte clips va a ver cual es la slide principal y a ocultar las demás.
+swiper.on("transitionEnd",fc) //lo mismo pero con swipes.
 const atras = document.querySelector(".swiper-button-prev")
 atras.addEventListener("click", fc)
 const alante = document.querySelector(".swiper-button-next")
