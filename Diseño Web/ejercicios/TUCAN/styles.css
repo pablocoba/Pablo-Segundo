@@ -1,0 +1,13 @@
+p{
+    background-image:url(./images/toucancombo2.jpg);
+    width:200px;
+    height:63px;
+
+}
+p:hover{
+    background-position: 0 126px;
+}
+p:active{
+    background-image:url(./images/toucancombo2.jpg);
+    background-position: 100% 63px;
+}

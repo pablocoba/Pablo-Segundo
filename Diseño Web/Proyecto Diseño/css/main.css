@@ -107,14 +107,15 @@ button {
 }
 .swiper {
   height: 100%;
-  max-width: 1000px;
+  max-width: 2000px;
 }
 
 .card-wrapper .swipper-slide-button {
-  width: 320px;
-  height: 480px;
-  margin-top: -260px;
+  width: 700px;
+  height: 540px;
+  margin-top: -280px;
   opacity: 0;
+  border: 10px solid green;
 }
 
 .card-wrapper {
@@ -126,7 +127,7 @@ button {
     display: none;
   }
   .card-link {
-    max-width: 200px !important;
+    max-width: 270px !important;
   }
   .info-card {
     max-width: 400px !important;
@@ -214,9 +215,129 @@ button {
   display: flex;
 }
 
+.gremio {
+  padding: 1rem;
+  border: 1px solid #D1AD2F;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#000 10%, #101A48);
+  margin: 0.1rem 20vw;
+  align-items: center;
+}
+.gremio img {
+  background-color: white;
+  max-width: 100px;
+  height: 100%;
+  margin: 0 1rem 0 0;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  order: 0;
+}
+.gremio button {
+  margin: 0.875rem 0.25rem 0 0;
+  text-wrap: nowrap;
+}
+
+.miembros {
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.miembros-cont > svg {
+  margin-right: 0.625rem;
+}
+.miembros div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.descripcion-gremio {
+  order: 1;
+}
+
+.info-gremio {
+  max-width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info-gremio p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1000px) {
+  .gremio {
+    margin: 0.1rem 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    order: 0;
+  }
+  .info-gremio {
+    max-width: 100%;
+  }
+  .descripcion-gremio {
+    order: 1;
+  }
+  .miembros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 2;
+    flex-grow: 3;
+    justify-content: center;
+  }
+  .miembros-cont {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .miembros svg {
+    margin-right: 0.625rem;
+  }
+  .miembros div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .miembros p {
+    display: inline;
+  }
+}
+form {
+  background: linear-gradient(#000 50%, #101A48);
+  margin: 0 30vw;
+}
+
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: "Helvetica";
+  font-weight: normal;
+  font-style: normal;
+  background-color: transparent;
+}
+
+input::-moz-placeholder {
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/fondo.jpg");
   background-size: cover;
+  background-attachment: fixed;
   text-wrap: balance;
   position: relative;
   min-height: 100vh;
@@ -244,9 +365,8 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  font-family: "Helvetica-Bold";
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Megrath";
+  letter-spacing: 1px;
 }
 
 p {
@@ -348,6 +468,9 @@ hr {
   bottom: 0;
   left: -10%;
 }
+.navbar li a.active {
+  color: #ffd439;
+}
 .navbar li a:hover {
   color: #ffd439;
 }
@@ -375,8 +498,8 @@ hr {
   border: none;
   margin: 0.225vw 2vw 0.225vw 1vw;
   padding: 0;
-  max-width: 4.25rem;
-  width: 100%;
+  width: 70px;
+  height: 100%;
 }
 .navbar li.logo:hover {
   background-color: transparent;
@@ -509,6 +632,9 @@ hr {
 .tarjeta-home div:nth-child(2) {
   padding: 0.75rem 3rem 1.5rem 3rem;
 }
+.tarjeta-home div:nth-child(2) button {
+  margin: 1rem 0.225rem 0 1rem;
+}
 .tarjeta-home div:nth-child(2) > p {
   padding: 0.75rem 5vw 1.5rem 5vw;
 }
@@ -560,7 +686,6 @@ footer {
 }
 
 .boton-rojo {
-  margin: 1rem 1rem 0 1rem;
   color: #D1AD2F;
   background: #6A2020;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4), inset 0px 0px 15px rgba(0, 0, 0, 0.3);
@@ -577,6 +702,9 @@ footer {
   p {
     font-size: 1.1rem;
   }
+  h1 {
+    font-size: 2.75rem;
+  }
   .front-page {
     height: 100svh;
   }
@@ -585,9 +713,6 @@ footer {
     margin-right: auto;
     margin-left: 1.5rem;
     margin-bottom: 4vh;
-  }
-  .front-page h1 {
-    font-size: 2.75rem;
   }
   .navbar {
     justify-content: space-between;

@@ -7,6 +7,9 @@
     p{
         @include font-size(p-mobile);
     }
+    h1{
+        @include font-size(h1-mobile);
+    }
     .front-page{
         height:100svh;
         div{
@@ -15,9 +18,7 @@
             margin-left:1.5rem;
             margin-bottom:4vh;
         }
-        h1{
-            @include font-size(h1-mobile);
-        }
+
     }
     .navbar{
         justify-content:space-between;

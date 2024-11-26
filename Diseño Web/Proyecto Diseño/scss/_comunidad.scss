@@ -1,0 +1,95 @@
+.gremio{
+    padding:1rem;
+    border: 1px solid $highlight-color;
+    display:flex;
+    justify-content: space-between;
+    background:linear-gradient(#000 10%, $background-color);
+    margin:.1rem 20vw;
+    align-items: center;
+    img{
+        background-color: white;
+        max-width:100px;
+        height:100%;
+        margin:0 1rem 0 0;
+        border-radius:10px;
+        object-fit: cover;
+        order:0;
+    }
+    button{
+        margin: .875rem .25rem 0 0;
+        text-wrap:nowrap;
+    }
+}
+.miembros{
+    margin-right:0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    &-cont>svg{
+        margin-right:.625rem;
+    }
+    div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+}
+.descripcion-gremio{
+    order:1;
+}
+.info-gremio{
+    max-width:60%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    p{
+        @include font-size(p-mobile);
+        margin-top:1rem;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width:1000px){
+    .gremio{
+        margin:.1rem 5vw;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    img{
+        order:0;
+    }
+    .info-gremio{
+        max-width:100%;
+    }
+    .descripcion-gremio{
+        order:1;
+    }
+    .miembros{
+        flex-direction:row;
+        flex-wrap:wrap;
+        order:2;
+        flex-grow:3;
+        justify-content: center;
+        &-cont{
+            display:flex;
+            flex-direction:row !important;
+            justify-content: center;
+            align-items: center;
+            margin-right:2rem;
+        }
+        svg{
+            margin-right:.625rem;
+        }
+        div{
+            //esto va en un media max width 1000px
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p{
+            display:inline;
+        }
+    }
+
+}

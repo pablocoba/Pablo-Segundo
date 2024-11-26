@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .habitacion {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid gray;
+            text-align: center;
+            vertical-align: top;
+            display: inline-block;
+            background-color: #f0f0f0;
+        }
+
+        .activo {
+            border-color: turquoise;
+            background-color: paleturquoise;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .habitaciones-anidadas {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="casa" class="contenedor">
+            <div id="sala" class="habitacion activo">Sala</div>
+            <div id="cocina" class="habitacion">Cocina</div>
+            <div id="pasillo" class="habitacion">
+                Pasillo
+                <div class="habitaciones-anidadas">
+                    <div id="dormitorio1" class="habitacion">Dormitorio 1</div>
+                    <div id="dormitorio2" class="habitacion">Dormitorio 2</div>
+                </div>
+            </div>
+            <div id="baño" class="habitacion">Baño</div>
+            <button type="button" onclick="siguienteHermano();">Ir al siguiente espacio</button>
+            <button type="button" onclick="anteriorHermano();">Ir al espacio anterior</button>
+            <button type="button" onclick="primerHijo();">Ir al primer espacio dentro</button>
+            <button type="button" onclick="ultimoHijo();">Ir al último espacio dentro</button>
+            <button type="button" onclick="contenedor();">Ir al espacio contenedor</button>
+        </div>
+
+
+
+
+    </body>
+    <script src="script.js"></script>
+</body>
+
+</html>

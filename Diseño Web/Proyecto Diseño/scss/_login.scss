@@ -1,0 +1,16 @@
+
+
+form{
+    background:linear-gradient(#000 50%, $background-color);
+    margin: 0 30vw;
+}
+input{
+    display:block;
+    @include font-size(p-pc);
+    @include font-style(normal);
+    background-color:transparent;
+}
+input::placeholder{
+    color:black;
+    
+}

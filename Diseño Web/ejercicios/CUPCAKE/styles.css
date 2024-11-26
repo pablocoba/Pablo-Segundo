@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'GoodDog';
+    src: url(./fonts/GoodDog-webfont.woff);
+}
+
+:root{
+    font-family: 'GoodDog';
+}
+p{
+    margin-right:10px;
+}
+.cupcake{
+    background-image: url(images/sprite.png);
+    width: 64px;
+    height:64px;
+}
+.donut{
+    background-image: url(images/sprite.png);
+    width: 64px;
+    height:64px;
+    background-position:0% 64px;
+}
+.roll{
+    background-image: url(images/sprite.png);
+    width: 64px;
+    height:64px;
+    background-position:0% 128px;
+}
+.applepie{
+    background-image: url(images/sprite.png);
+    width: 64px;
+    height:64px;
+    background-position:0% 192px;
+}
+a{
+    font-size:24px;
+    text-decoration: none;
+    color:rgb(87, 38, 23);
+}
+
+li{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:orange;
+    width:200px;
+    border-radius:10px;
+}
