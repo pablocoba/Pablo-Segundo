@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin:0;
+}
+div{
+    width:99vw;
+    height:99vh;
+    border:1px solid black;
+    margin:auto;
+    background:
+        url(nube-sol.png) 90% 10% no-repeat,
+
+        url(Funkypinkybird.png) 0% 7% no-repeat,
+        url(Funkypinkybird.png) 30% 5% no-repeat,
+        url(Funkypinkybird.png) 90% 4% no-repeat,
+        url(Funkypinkybird.png) 42% 35% no-repeat,
+        url(Funkypinkybird.png) 60% 24% no-repeat,
+        url(Funkypinkybird.png) 27% 75% no-repeat,
+        url(Funkypinkybird.png) 45% 80% no-repeat,
+        url(nube.png) 4% 1% no-repeat,
+        url(nube.png) 50% 42% no-repeat,
+        url(nube.png) 77% 3% no-repeat,
+        url(nube.png) 43% 65% no-repeat,
+        url(nube.png) 70% 50% no-repeat,
+        url(nube.png) 80% 23% no-repeat,
+        url(lluvia.png) 25% 3% no-repeat,
+        url(lluvia.png) 10% 65% no-repeat,
+        url(lluvia.png) 70% 90% no-repeat,
+        url(lluvia.png) 80% 70% no-repeat,
+        url(arcoiris.png) 80% 80% no-repeat
+    ;
+    background-color:rgb(102, 189, 230);
+    background-size:
+     20%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     8%,
+     30%
+     ;
+}

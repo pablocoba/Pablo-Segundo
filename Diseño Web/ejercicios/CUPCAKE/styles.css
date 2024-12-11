@@ -13,6 +13,7 @@ p{
     background-image: url(images/sprite.png);
     width: 64px;
     height:64px;
+    margin-right:10px;
 }
 .donut{
     background-image: url(images/sprite.png);
@@ -33,7 +34,7 @@ p{
     background-position:0% 192px;
 }
 a{
-    font-size:24px;
+    font-size:30px;
     text-decoration: none;
     color:rgb(87, 38, 23);
 }
@@ -44,6 +45,12 @@ li{
     flex-direction: row;
     align-items: center;
     background-color:orange;
-    width:200px;
-    border-radius:10px;
+    width:150px;
+    padding:0 20px;
+}
+li:nth-child(1){
+    border-radius:10px 10px 0 0;
+}
+li:nth-child(4){
+    border-radius:0 0 10px 10px;
 }

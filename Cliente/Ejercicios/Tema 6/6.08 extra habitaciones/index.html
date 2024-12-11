@@ -35,33 +35,24 @@
         }
     </style>
 </head>
-
 <body>
-
-    <body>
-        <div id="casa" class="contenedor">
-            <div id="sala" class="habitacion activo">Sala</div>
-            <div id="cocina" class="habitacion">Cocina</div>
-            <div id="pasillo" class="habitacion">
-                Pasillo
-                <div class="habitaciones-anidadas">
-                    <div id="dormitorio1" class="habitacion">Dormitorio 1</div>
-                    <div id="dormitorio2" class="habitacion">Dormitorio 2</div>
-                </div>
+    <div id="casa" class="contenedor">
+        <div id="sala" class="habitacion activo">Sala</div>
+        <div id="cocina" class="habitacion">Cocina</div>
+        <div id="pasillo" class="habitacion">
+            Pasillo
+            <div class="habitaciones-anidadas"> 
+                <div id="dormitorio1" class="habitacion">Dormitorio 1</div>
+                <div id="dormitorio2" class="habitacion">Dormitorio 2</div>
             </div>
-            <div id="baño" class="habitacion">Baño</div>
-            <button type="button" onclick="siguienteHermano();">Ir al siguiente espacio</button>
-            <button type="button" onclick="anteriorHermano();">Ir al espacio anterior</button>
-            <button type="button" onclick="primerHijo();">Ir al primer espacio dentro</button>
-            <button type="button" onclick="ultimoHijo();">Ir al último espacio dentro</button>
-            <button type="button" onclick="contenedor();">Ir al espacio contenedor</button>
         </div>
-
-
-
-
-    </body>
+        <div id="baño" class="habitacion">Baño</div>
+        <button type="button" onclick="siguienteHermano();">Ir al siguiente espacio</button>
+        <button type="button" onclick="anteriorHermano();">Ir al espacio anterior</button>
+        <button type="button" onclick="primerHijo();">Ir al primer espacio dentro</button>
+        <button type="button" onclick="ultimoHijo();">Ir al último espacio dentro</button>
+        <button type="button" onclick="contenedor();">Ir al espacio contenedor</button>
+    </div>
     <script src="script.js"></script>
 </body>
-
 </html>

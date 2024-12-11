@@ -1,0 +1,51 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(46, 38, 105);
+}
+article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 25px;
+    border-radius:14px;
+    padding:20px;
+    margin:20px;
+    border: 2px solid rgb(233, 230, 255);
+    width:fit-content;
+    gap:10px;
+    background:linear-gradient(to bottom, rgb(115, 109, 150),rgb(100, 94, 136))
+}
+
+#pantalla {
+    border-radius:9px;
+    width: auto;
+    padding: 20px;
+    border: 2px solid rgb(233, 230, 255);
+    text-align: end;
+    background:linear-gradient(to right, rgb(208, 208, 240), rgb(240, 240, 255))
+}
+
+.boton {
+    border-radius:8px;
+    text-align: center;
+    padding: 10px 20px;
+    width:50px;
+    height:30px;
+    border: 2px solid rgb(233, 230, 255);
+    cursor: pointer;
+    background:linear-gradient(to right, rgb(209, 205, 235), rgb(164, 161, 190))
+}
+.boton:hover{
+    background:linear-gradient(to right, rgb(210,207,232), rgb(153,147,203))
+}
+.boton:active{
+    background:linear-gradient(to right, rgb(205,200,239), rgb(139,130,220))
+}
+.fila {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
